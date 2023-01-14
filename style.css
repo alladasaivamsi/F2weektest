@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 50px 20px;
+}
+
+.user {
+    margin-top: 50px;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#enterName {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+#enterProfession {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+#enterAge {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+#addUserBtn {
+    color: black;
+    background-color: white;
+    padding: 10px 50px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+#userData  {
+    margin-top: 30px;
+    color: gray;
+    font-size: 20px;
+}
+
+.table {
+    display: inline;
+    background-color: black;
+    color: white;
+    /* border: 1px solid white; */
+    border-radius: 6px;
+    padding: 10px;
+    margin: 30px 0 0;
+}
+
+.tableRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+#deleteBtn {
+    color: black;
+    background: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+#tableContent{
+    margin-top: 30px;
+}
+
+@media (max-width : 1150px) {
+    .input {
+        display: block;
+    }
+
+    #enterName {
+        display: block;
+        margin-bottom: 30px;
+        width: 90%;
+    }
+
+    #enterProfession {
+        display: block;
+        margin-bottom: 30px;
+        width: 90%;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Cards</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="user">
+        <h3>New Employees</h3>
+        <form onsubmit="addUser(event)">
+            <div class="input">
+                <span>
+                    <label for="enterName" class="userInput">Enter Name</label><br>
+                    <input type="text" id="enterName" size="70">
+                </span>
+                <span>
+                    <label for="enterProfession" class="userInput">Enter Profession</label><br>
+                    <input type="text" id="enterProfession" size="70">
+                </span>
+                <span>
+                    <label for="enterAge" class="userInput">Enter Age</label><br>
+                    <input type="number" id="enterAge" size="60">
+                </span>
+            </div>
+            <div>
+                <button id="addUserBtn" class="btn" onclick="onDeleteRow()">Add User</button>
+            </div>
+        </form>
+        <br>
+        <p id="error"></p>
+    </div>
+
+    <div class="user">
+        <h3 class="userHeading">Added Employees</h3>
+        <p id="userData">You have 0 Employees.</p>
+    </div>
+
+    <div id="tableContent">
+        <table class="table" id="tableData">
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <!-- Javascript -->
+    <script src="script.js"></script>
+
+    
+</body>
